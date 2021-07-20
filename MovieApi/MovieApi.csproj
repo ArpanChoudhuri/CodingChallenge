@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="LibraryFile\Library.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="LibraryFile\Library.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CodingChallenge.DataAccess\CodingChallenge.DataAccess.csproj" />
+  </ItemGroup>
+
+
+</Project>

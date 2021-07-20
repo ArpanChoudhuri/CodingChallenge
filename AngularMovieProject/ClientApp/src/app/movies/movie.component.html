@@ -1,0 +1,14 @@
+<div>
+  <form [formGroup]="form">
+    <mat-form-field>
+      <div style="float: left;margin-left:20px">
+        <label>Filter By Title Below</label>
+        <input matInput [formControl]="data" placeholder="" />
+      </div>
+
+
+    </mat-form-field>
+
+  </form>
+  <app-movies [filteredData]="filteredData"></app-movies>
+</div>
